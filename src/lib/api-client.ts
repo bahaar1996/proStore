@@ -1,10 +1,11 @@
 import axios from "axios";
 
 export const api = axios.create({
-  baseURL: "/api",
+  baseURL: "/",
 });
 
 export const fetcher = async <T>(url: string): Promise<T> => {
+  console.log("==>url", url);
   const res = await api.get(url);
   return res.data;
 };

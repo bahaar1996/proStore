@@ -1,9 +1,24 @@
 import { NextResponse } from "next/server";
 
-const products = [
-  { id: 1, title: "MacBook Pro", price: 2400 },
-  { id: 2, title: "iPhone 15", price: 1200 },
-  { id: 3, title: "AirPods Pro", price: 300 },
+export const products = [
+  {
+    id: "1",
+    title: "MacBook Pro",
+    price: 2400,
+    description: "Powerful laptop",
+  },
+  {
+    id: "2",
+    title: "iPhone 15",
+    price: 1200,
+    description: "Latest Apple phone",
+  },
+  {
+    id: "3",
+    title: "AirPods Pro",
+    price: 300,
+    description: "Noise cancelling earbuds",
+  },
 ];
 
 export async function GET() {
